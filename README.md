@@ -1,6 +1,8 @@
 ## Problem Statement
 This program addresses the implementation of a simple client-server system using sockets in order to display a binary search tree (BST) to multiple clients concurrently. Each client will be able to interact with the BST to insert, remove, or search for a value in the tree, as well as print out a traversal of the tree in pre, post, and in order. Each client shares the same instance of the BST so changes made by one client gets reflected to all the other clients that connect to the server. 
 
+> **Note**: This project was originally part of a private GitLab repository and has been migrated to GitHub as an independent repository. As a result, the commit history starts from the migration point.
+
 ## Developer Documentation
 <dl>
 <p>
