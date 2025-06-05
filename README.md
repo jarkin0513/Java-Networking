@@ -100,26 +100,22 @@ Java Documents are visible using a local server on the machine. You must have at
 
 ## User Documentation
 
-<dl>
- 
- <dt> Launching the Program </dt>
-  <dd> 
+### Launching the Program 
+   
 To start the program, first navigate to the ServerMain.java file and click the run button from your IDE. The run button should look like a green arrow, or something similar to that. <br>
 In the console, you will see a message that says the server is now running. <br>
 Next, navigate to the ClientMain.java file and start it the same way you did for the ServerMain file. If successful, after running the client file, you will see a message in the client console that says you successfully connected to the server at its IP address. You will also see a message from the server confirming your connection with your connection ID. Similarly, in the server console you should see a message that appeared saying a client connected and their IP address. <br>
 Note: This program is meant to handle multiple clients concurrently. So, once you have the server running, you may run the ClientMain file again and again to pull up multiple instances of the client. <br> <br>
 ***IMPORTANT: YOU MUST START THE SERVER BEFORE RUNNING THE CLIENT***
-  </dd>
-
- <dt> Using the Program </dt>
- <dd>
-  As soon as you run the client and get a successful connection to the server, you will be presented with a graphical user interface (GUI) that you will use to interact with the binary search tree (BST). You will see six different options to choose from. <br> <br>
+  
+ ### Using the Program 
+As soon as you run the client and get a successful connection to the server, you will be presented with a graphical user interface (GUI) that you will use to interact with the binary search tree (BST). You will see six different options to choose from. <br> 
 The first one is the insert button. This is what you will use to insert values into the BST. To insert a value, enter an integer in the text field and then click the insert button. If successful you will see a message from the server letting you know in the client console.<br>
 The remove button is used to remove values from the BST. In order to remove a value, follow the same instructions as inserting, but instead click the remove button. If a value was actually in the BST, it will be removed and you will see a corresponding message in the client console. If a value you tried to remove was not in the BST, you will see a message in the console letting you know that value was not found. <br>
-The search button is used to search for a value in the BST. Follow the same instructions as you did for inserting and removing, but instead click the search button. Very similar to the remove button, you will see messages in the console that will depend on whether or not the value was actually in the BST or not. <br> <br>
-The In-Order Traversal button, when clicked will display the BST being traversed "in-order" in the client console. <br>
-The Pre-Order Traversal button, when clicked will display the BST being traversed "pre-order" in the client console. <br>
-The Post-Order Traversal button, when clicked will display the BST being traversed "post-order" in the client console. <br>
+The search button is used to search for a value in the BST. Follow the same instructions as you did for inserting and removing, but instead click the search button. Very similar to the remove button, you will see messages in the console that will depend on whether or not the value was actually in the BST or not. <br> 
+- The In-Order Traversal button, when clicked will display the BST being traversed "in-order" in the client console. 
+- The Pre-Order Traversal button, when clicked will display the BST being traversed "pre-order" in the client console. 
+- The Post-Order Traversal button, when clicked will display the BST being traversed "post-order" in the client console. 
 For all three of these options, the traversal method will be displayed in list form. <br> <br><br>
 Like I mentioned previously, this program can handle multiple clients at once. For the purpose of this program each client that connects all shares the same instance of the BST. This means that if you were to run the program make changes to it and then run another client instance and perform one of the traversal methods, for example, you will see the preexisting BST listed out even though you just connected to the server and did not perform any actions yet. When an insertion or removal is performed by one client, it gets reflected for all the other clients that are connected or choose to connect to the server. <br><br>
 
@@ -127,16 +123,8 @@ You will notice messages appear in both the client and server consoles that I di
 
 For more information about binary search trees, please refer to this [link](https://en.wikipedia.org/wiki/Binary_search_tree#:~:text=A%20binary%20search%20tree%20is%20a%20rooted%20binary%20tree%20in,to%20A%2C%20satisfying%20the%20binary).
 
- </dd>
 
-<dt> Exiting the Program </dt>
- <dd> 
-
- </dd>
- 
-</dl>
-
-
+### Exiting the Program 
  
 
 ## Source Code
