@@ -3,6 +3,14 @@ This program addresses the implementation of a simple client-server system using
 
 > **Note**: This project was originally part of a private GitLab repository and has been migrated to GitHub as an independent repository. As a result, the commit history starts from the migration point.
 
+## Concepts Demonstrated
+- Client-Server Architecture
+- Java Sockets (Networking)
+- Multithreading (ExecutorService, Runnable)
+- Shared Mutable State (BST synchronization)
+- GUI Development (Swing)
+- Exception Handling
+
 ## Developer Documentation
 <dl>
 <p>
@@ -25,7 +33,7 @@ The client sends requests to the server using the sendData(), sendBSTModificatio
 
 Finally, when the communication with the server is finished (indicated by the receipt of an exit signal which like I mentioned does not actually work the way I wanted it to), the closeConnection() method is called. This method closes the input and output streams and the client socket, effectively ending the connection to the server. Although the exit signal may not function as intended, the server is still able to handle clients disconnecting whenever the GUI is exited without dealing with any sort of performance issues or timing with messages being sent to and back. 
 <br>
-Exception handling for UnknownHostException and IOException during the connection process and stream initialization is used to ensure the the client is able to handle errors without shutting everything down and giving the user feedback about what might have occurred.
+Exception handling for UnknownHostException and IOException during the connection process and stream initialization is used to ensure the client is able to handle errors without shutting everything down and giving the user feedback about what might have occurred.
 
 <br><br>
 
@@ -56,7 +64,7 @@ The results of these operations are sent back to the client using the sendData m
 When the client disconnects, the closeConnection method is called to close the input and output streams and the client connection. The goal was to set up the methods inside Server that allowed for an easy way to follow along throughout the process of handling client connections. I tried to limit methods to take care of one or two specific actions in order to help achieve this.
 <br><br>
 
-IOException handling is used through out the class in order to handle any potential input / output errors that may arise during the sending of back and forth data to and from the client/server. <br><br>
+IOException handling is used throughout the class in order to handle any potential input / output errors that may arise during the sending of back and forth data to and from the client/server. <br><br>
 
 Inline comments are used to explain more in depth about how the Server class functions. These can be found within the source code.
 
@@ -92,7 +100,7 @@ Java Documents are visible using a local server on the machine. You must have at
    ```cd path\to\the\project\doc```
 3. Start a local server:
    ```python -m http.server 8000```
-4. Open your browser and vist:
+4. Open your browser and visit:
    ```http://localhost:8000/package-summary.html```
  
 [Java Docs can be accessed here!](https://github.com/jarkin0513/Java-Networking/blob/main/doc/package-summary.html) 
